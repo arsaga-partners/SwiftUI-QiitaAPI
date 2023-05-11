@@ -14,6 +14,10 @@
 		61A5FD942A0C70FD00619E80 /* SwiftUI_QiitaAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FD932A0C70FD00619E80 /* SwiftUI_QiitaAPITests.swift */; };
 		61A5FD9E2A0C70FD00619E80 /* SwiftUI_QiitaAPIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FD9D2A0C70FD00619E80 /* SwiftUI_QiitaAPIUITests.swift */; };
 		61A5FDA02A0C70FD00619E80 /* SwiftUI_QiitaAPIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FD9F2A0C70FD00619E80 /* SwiftUI_QiitaAPIUITestsLaunchTests.swift */; };
+		61A5FDB02A0C73CD00619E80 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDAF2A0C73CD00619E80 /* Post.swift */; };
+		61A5FDB22A0C73F200619E80 /* QiitaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDB12A0C73F200619E80 /* QiitaAPI.swift */; };
+		61A5FDBA2A0C74BF00619E80 /* PostListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDB92A0C74BF00619E80 /* PostListViewModel.swift */; };
+		61A5FDBC2A0C751E00619E80 /* PostListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDBB2A0C751E00619E80 /* PostListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +48,10 @@
 		61A5FD992A0C70FD00619E80 /* SwiftUI-QiitaAPIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-QiitaAPIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		61A5FD9D2A0C70FD00619E80 /* SwiftUI_QiitaAPIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_QiitaAPIUITests.swift; sourceTree = "<group>"; };
 		61A5FD9F2A0C70FD00619E80 /* SwiftUI_QiitaAPIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_QiitaAPIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		61A5FDAF2A0C73CD00619E80 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		61A5FDB12A0C73F200619E80 /* QiitaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPI.swift; sourceTree = "<group>"; };
+		61A5FDB92A0C74BF00619E80 /* PostListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListViewModel.swift; sourceTree = "<group>"; };
+		61A5FDBB2A0C751E00619E80 /* PostListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +102,9 @@
 		61A5FD812A0C70FB00619E80 /* SwiftUI-QiitaAPI */ = {
 			isa = PBXGroup;
 			children = (
-				61A5FD822A0C70FB00619E80 /* SwiftUI_QiitaAPIApp.swift */,
-				61A5FD842A0C70FB00619E80 /* ContentView.swift */,
+				61A5FDAE2A0C737D00619E80 /* API */,
+				61A5FDAD2A0C736200619E80 /* Entity */,
+				61A5FDAC2A0C732400619E80 /* Modules */,
 				61A5FD862A0C70FD00619E80 /* Assets.xcassets */,
 				61A5FD882A0C70FD00619E80 /* Preview Content */,
 			);
@@ -125,6 +134,65 @@
 				61A5FD9F2A0C70FD00619E80 /* SwiftUI_QiitaAPIUITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI-QiitaAPIUITests";
+			sourceTree = "<group>";
+		};
+		61A5FDAC2A0C732400619E80 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				61A5FDB52A0C747800619E80 /* View */,
+				61A5FDB62A0C747F00619E80 /* ViewModel */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		61A5FDAD2A0C736200619E80 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				61A5FDAF2A0C73CD00619E80 /* Post.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		61A5FDAE2A0C737D00619E80 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				61A5FDB12A0C73F200619E80 /* QiitaAPI.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		61A5FDB52A0C747800619E80 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				61A5FD822A0C70FB00619E80 /* SwiftUI_QiitaAPIApp.swift */,
+				61A5FD842A0C70FB00619E80 /* ContentView.swift */,
+				61A5FDBD2A0C775D00619E80 /* PostList */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		61A5FDB62A0C747F00619E80 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				61A5FDBE2A0C777200619E80 /* PostList */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		61A5FDBD2A0C775D00619E80 /* PostList */ = {
+			isa = PBXGroup;
+			children = (
+				61A5FDBB2A0C751E00619E80 /* PostListView.swift */,
+			);
+			path = PostList;
+			sourceTree = "<group>";
+		};
+		61A5FDBE2A0C777200619E80 /* PostList */ = {
+			isa = PBXGroup;
+			children = (
+				61A5FDB92A0C74BF00619E80 /* PostListViewModel.swift */,
+			);
+			path = PostList;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +325,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A5FDB02A0C73CD00619E80 /* Post.swift in Sources */,
+				61A5FDBA2A0C74BF00619E80 /* PostListViewModel.swift in Sources */,
 				61A5FD852A0C70FB00619E80 /* ContentView.swift in Sources */,
 				61A5FD832A0C70FB00619E80 /* SwiftUI_QiitaAPIApp.swift in Sources */,
+				61A5FDBC2A0C751E00619E80 /* PostListView.swift in Sources */,
+				61A5FDB22A0C73F200619E80 /* QiitaAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -417,6 +489,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-QiitaAPI/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -445,6 +518,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-QiitaAPI/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

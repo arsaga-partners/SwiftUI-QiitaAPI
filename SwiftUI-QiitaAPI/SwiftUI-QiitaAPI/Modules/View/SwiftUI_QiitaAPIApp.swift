@@ -11,7 +11,7 @@ import SwiftUI
 struct SwiftUI_QiitaAPIApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            PostListView()
         }
     }
 }
