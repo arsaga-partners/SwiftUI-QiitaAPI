@@ -17,11 +17,13 @@ struct PostListView: View {
                     Text("Error: \(error.localizedDescription)")
                 } else {
                     List(viewModel.posts) { post in
-                        VStack(alignment: .leading) {
-                            Text(post.title)
-                                .font(.headline)
-                            Text(post.url)
-                                .font(.subheadline)
+                        NavigationLink(destination: PostDetailView(post: post)) {
+                            VStack(alignment: .leading) {
+                                Text(post.title)
+                                    .font(.headline)
+                                Text(post.url)
+                                    .font(.subheadline)
+                            }
                         }
                     }
                 }
