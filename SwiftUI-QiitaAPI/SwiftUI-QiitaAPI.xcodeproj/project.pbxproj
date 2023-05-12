@@ -21,6 +21,15 @@
 		61A5FDC12A0C788200619E80 /* PostListDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDC02A0C788200619E80 /* PostListDetailView.swift */; };
 		61A5FDC42A0C789800619E80 /* PostListDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDC32A0C789800619E80 /* PostListDetailViewModel.swift */; };
 		61A5FDC72A0C7AA000619E80 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDC62A0C7AA000619E80 /* WebView.swift */; };
+		61A5FDCA2A0CAB9900619E80 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 61A5FDC92A0CAB9900619E80 /* Alamofire */; };
+		61A5FDCD2A0DC3D500619E80 /* QiitaRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDCC2A0DC3D500619E80 /* QiitaRepository.swift */; };
+		61A5FDCF2A0DC40B00619E80 /* APIRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDCE2A0DC40B00619E80 /* APIRoute.swift */; };
+		61A5FDD12A0DC44800619E80 /* APIRequestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDD02A0DC44800619E80 /* APIRequestable.swift */; };
+		61A5FDD32A0DC5CC00619E80 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDD22A0DC5CC00619E80 /* APIResult.swift */; };
+		61A5FDD72A0DC65C00619E80 /* QiitaCustomError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDD62A0DC65C00619E80 /* QiitaCustomError.swift */; };
+		61A5FDDA2A0DC84600619E80 /* QiitaAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDD92A0DC84600619E80 /* QiitaAPIRequest.swift */; };
+		61A5FDDD2A0DC8B100619E80 /* APIConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDDC2A0DC8B100619E80 /* APIConst.swift */; };
+		61A5FDDF2A0DD1C600619E80 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61A5FDDE2A0DD1C600619E80 /* APIError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +67,14 @@
 		61A5FDC02A0C788200619E80 /* PostListDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListDetailView.swift; sourceTree = "<group>"; };
 		61A5FDC32A0C789800619E80 /* PostListDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostListDetailViewModel.swift; sourceTree = "<group>"; };
 		61A5FDC62A0C7AA000619E80 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		61A5FDCC2A0DC3D500619E80 /* QiitaRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaRepository.swift; sourceTree = "<group>"; };
+		61A5FDCE2A0DC40B00619E80 /* APIRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRoute.swift; sourceTree = "<group>"; };
+		61A5FDD02A0DC44800619E80 /* APIRequestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequestable.swift; sourceTree = "<group>"; };
+		61A5FDD22A0DC5CC00619E80 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		61A5FDD62A0DC65C00619E80 /* QiitaCustomError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaCustomError.swift; sourceTree = "<group>"; };
+		61A5FDD92A0DC84600619E80 /* QiitaAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QiitaAPIRequest.swift; sourceTree = "<group>"; };
+		61A5FDDC2A0DC8B100619E80 /* APIConst.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConst.swift; sourceTree = "<group>"; };
+		61A5FDDE2A0DD1C600619E80 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A5FDCA2A0CAB9900619E80 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +126,9 @@
 		61A5FD812A0C70FB00619E80 /* SwiftUI-QiitaAPI */ = {
 			isa = PBXGroup;
 			children = (
+				61A5FDDB2A0DC89C00619E80 /* Const */,
+				61A5FDD82A0DC82E00619E80 /* Request */,
+				61A5FDCB2A0DC39300619E80 /* Repository */,
 				61A5FDAE2A0C737D00619E80 /* API */,
 				61A5FDAD2A0C736200619E80 /* Entity */,
 				61A5FDAC2A0C732400619E80 /* Modules */,
@@ -155,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				61A5FDAF2A0C73CD00619E80 /* Post.swift */,
+				61A5FDDE2A0DD1C600619E80 /* APIError.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -163,6 +185,10 @@
 			isa = PBXGroup;
 			children = (
 				61A5FDB12A0C73F200619E80 /* QiitaAPI.swift */,
+				61A5FDCE2A0DC40B00619E80 /* APIRoute.swift */,
+				61A5FDD02A0DC44800619E80 /* APIRequestable.swift */,
+				61A5FDD22A0DC5CC00619E80 /* APIResult.swift */,
+				61A5FDD62A0DC65C00619E80 /* QiitaCustomError.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -170,11 +196,11 @@
 		61A5FDB52A0C747800619E80 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				61A5FDC52A0C7A8D00619E80 /* Common */,
 				61A5FD822A0C70FB00619E80 /* SwiftUI_QiitaAPIApp.swift */,
 				61A5FD842A0C70FB00619E80 /* ContentView.swift */,
 				61A5FDBD2A0C775D00619E80 /* PostList */,
 				61A5FDBF2A0C785900619E80 /* PostListDetail */,
+				61A5FDC52A0C7A8D00619E80 /* Common */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -228,6 +254,30 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		61A5FDCB2A0DC39300619E80 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				61A5FDCC2A0DC3D500619E80 /* QiitaRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		61A5FDD82A0DC82E00619E80 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				61A5FDD92A0DC84600619E80 /* QiitaAPIRequest.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		61A5FDDB2A0DC89C00619E80 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				61A5FDDC2A0DC8B100619E80 /* APIConst.swift */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,6 +294,9 @@
 			dependencies = (
 			);
 			name = "SwiftUI-QiitaAPI";
+			packageProductDependencies = (
+				61A5FDC92A0CAB9900619E80 /* Alamofire */,
+			);
 			productName = "SwiftUI-QiitaAPI";
 			productReference = 61A5FD7F2A0C70FB00619E80 /* SwiftUI-QiitaAPI.app */;
 			productType = "com.apple.product-type.application";
@@ -316,6 +369,9 @@
 				Base,
 			);
 			mainGroup = 61A5FD762A0C70FB00619E80;
+			packageReferences = (
+				61A5FDC82A0CAB9900619E80 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 61A5FD802A0C70FB00619E80 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -358,14 +414,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61A5FDD72A0DC65C00619E80 /* QiitaCustomError.swift in Sources */,
+				61A5FDCD2A0DC3D500619E80 /* QiitaRepository.swift in Sources */,
 				61A5FDB02A0C73CD00619E80 /* Post.swift in Sources */,
+				61A5FDDF2A0DD1C600619E80 /* APIError.swift in Sources */,
 				61A5FDC42A0C789800619E80 /* PostListDetailViewModel.swift in Sources */,
+				61A5FDD32A0DC5CC00619E80 /* APIResult.swift in Sources */,
+				61A5FDCF2A0DC40B00619E80 /* APIRoute.swift in Sources */,
 				61A5FDBA2A0C74BF00619E80 /* PostListViewModel.swift in Sources */,
 				61A5FD852A0C70FB00619E80 /* ContentView.swift in Sources */,
 				61A5FD832A0C70FB00619E80 /* SwiftUI_QiitaAPIApp.swift in Sources */,
 				61A5FDC12A0C788200619E80 /* PostListDetailView.swift in Sources */,
 				61A5FDC72A0C7AA000619E80 /* WebView.swift in Sources */,
+				61A5FDDA2A0DC84600619E80 /* QiitaAPIRequest.swift in Sources */,
+				61A5FDDD2A0DC8B100619E80 /* APIConst.swift in Sources */,
 				61A5FDBC2A0C751E00619E80 /* PostListView.swift in Sources */,
+				61A5FDD12A0DC44800619E80 /* APIRequestable.swift in Sources */,
 				61A5FDB22A0C73F200619E80 /* QiitaAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -687,6 +751,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		61A5FDC82A0CAB9900619E80 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		61A5FDC92A0CAB9900619E80 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 61A5FDC82A0CAB9900619E80 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 61A5FD772A0C70FB00619E80 /* Project object */;
 }
