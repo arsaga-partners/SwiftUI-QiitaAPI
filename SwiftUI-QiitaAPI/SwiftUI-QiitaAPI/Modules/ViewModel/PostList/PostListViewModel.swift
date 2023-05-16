@@ -20,10 +20,15 @@ class PostListViewModel: ObservableObject {
     
     func fetchPosts() async {
         do {
-            self.posts = try await api.fetchPosts()
-            self.error = nil
+            let fetchedPosts = try await QiitaRepository.fetchPosts()
+            DispatchQueue.main.async {
+                self.posts = fetchedPosts
+                self.error = nil
+            }
         } catch {
-            self.error = error
+            DispatchQueue.main.async {
+                self.error = error
+            }
         }
     }
 }
