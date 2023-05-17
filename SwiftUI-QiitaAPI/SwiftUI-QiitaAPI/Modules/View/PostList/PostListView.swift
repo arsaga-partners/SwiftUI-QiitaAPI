@@ -29,7 +29,7 @@ struct PostListView: View {
                 }
             }
             .toolbar {
-                ToolbarItem(placement: .navigation) {
+                ToolbarItem(placement: .principal) {
                     Image("qiita")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
