@@ -22,4 +22,9 @@ struct PostDetailView: View {
             }
             .navigationBarTitleDisplayMode(.inline)
     }
+     //タイトルパターン
+//    var body: some View {
+//        WebView(url: URL(string: post.url)!)
+//            .navigationTitle(post.title)
+//    }
 }
