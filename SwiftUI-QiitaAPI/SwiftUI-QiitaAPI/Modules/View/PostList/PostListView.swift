@@ -33,9 +33,10 @@ struct PostListView: View {
                     Image("qiita")
                         .resizable()
                         .aspectRatio(contentMode: .fill)
-                        .padding(.vertical, 5)
+                        .padding(.vertical, -3)
                 }
             }
+            .navigationBarTitleDisplayMode(.inline)
             .task {
                 await viewModel.fetchPosts()
             }
