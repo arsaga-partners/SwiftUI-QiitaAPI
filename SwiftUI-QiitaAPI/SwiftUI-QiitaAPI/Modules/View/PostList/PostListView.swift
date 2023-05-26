@@ -28,7 +28,15 @@ struct PostListView: View {
                     }
                 }
             }
-            .navigationTitle("Posts")
+            .toolbar {
+                ToolbarItem(placement: .principal) {
+                    Image("qiita")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .padding(.vertical, -3)
+                }
+            }
+            .navigationBarTitleDisplayMode(.inline)
             .task {
                 await viewModel.fetchPosts()
             }

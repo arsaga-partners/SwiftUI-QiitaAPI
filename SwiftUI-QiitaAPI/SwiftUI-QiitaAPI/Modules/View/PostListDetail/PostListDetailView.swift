@@ -12,6 +12,19 @@ struct PostDetailView: View {
 
     var body: some View {
         WebView(url: URL(string: post.url)!)
-            .navigationTitle(post.title)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Image("qiita")
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                        .padding(.vertical, -5)
+                }
+            }
+            .navigationBarTitleDisplayMode(.inline)
     }
+     //タイトルパターン
+//    var body: some View {
+//        WebView(url: URL(string: post.url)!)
+//            .navigationTitle(post.title)
+//    }
 }
